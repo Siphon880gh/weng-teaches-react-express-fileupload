@@ -57,7 +57,7 @@ function App() {
         </div>
 
         <img src={mediaName?`uploads/${mediaName}?v=${purgeCache}`:logo} className={mediaName?"Image-preview":"App-logo"} alt="logo" />
-        <form onSubmit={(event) => { event.preventDefault(); handleBackend() }}>
+        <form onSubmit={(event) => { event.preventDefault(); }}>
           <input type="file" id="upload-file" onChange={handleMedia} />
           <label class="d-block small" for="upload-file">{mediaName?mediaName:"Choose File"} </label>
         </form>
